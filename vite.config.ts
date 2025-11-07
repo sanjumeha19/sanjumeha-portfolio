@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base:"/pixel-etch-folio/"
+  base:"/sanjumeha-portfolio/"
 }));
