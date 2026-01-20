@@ -50,7 +50,7 @@ const Home = () => {
           </li>
           <li className="flex items-center gap-2">
             <span className="w-2 h-2 bg-primary rounded-full"></span>
-            Exploring design trends
+            Exploring new design trends
           </li>
         </ul>
       </section>
@@ -97,7 +97,7 @@ const Home = () => {
                <li>Power BI</li>
               <li>UI/UX (Figma)</li>
               <li>Adobe Illustrator</li>
-              <li>Wix</li>
+              <li>Wix Studio</li>
               <li>WordPress</li>
               <li>Front-end Development</li>
               <li>Business Analysis</li>
@@ -124,7 +124,7 @@ const Home = () => {
       {/* Resume Download */}
       <section>
   <h2 className="text-3xl mb-6">Resume</h2>
-  <a href="/mine.pdf" download>
+<a href="/sanjumeha-portfolio/SG_SANJU_MEHA.pdf" download>
     <Button className="border-primary hover:bg-primary hover:text-primary-foreground">
       Download Resume
     </Button>
