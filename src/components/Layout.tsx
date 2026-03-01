@@ -40,6 +40,14 @@ export const Layout = ({ children }: LayoutProps) => {
             Projects
           </NavLink>
           <NavLink
+  to="/hackathons"
+  className="text-lg font-light tracking-wide hover:text-primary transition-colors py-2 text-center"
+  activeClassName="text-primary font-normal"
+>
+  Hackathons
+</NavLink>
+
+          <NavLink
             to="/courses"
             className="text-lg font-light tracking-wide hover:text-primary transition-colors py-2 text-center"
             activeClassName="text-primary font-normal"

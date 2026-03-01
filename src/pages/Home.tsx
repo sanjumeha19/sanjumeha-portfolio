@@ -1,6 +1,7 @@
 import { MapPin, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+
 const Home = () => {
   return (
     <div className="animate-fade-in space-y-16">
@@ -58,18 +59,8 @@ const Home = () => {
       {/* Extra-Curricular */}
       <section>
         <h2 className="text-3xl mb-6">Extra-Curricular</h2>
-        <div className="border border-border rounded-lg p-6">
-          <div className="flex items-start gap-3 mb-4">
-            <Award className="w-6 h-6 mt-1" />
-            <div>
-              <h3 className="text-xl font-medium mb-1">Makeup Artist</h3>
-              
-            </div>
-          </div>
-          <Button variant="outline" className="border-primary hover:bg-primary hover:text-primary-foreground">
-            View Certificate
-          </Button>
-        </div>
+       
+        <h3 className="text-xl font-medium mb-1">Makeup Artist (Certified)</h3>
       </section>
 
       {/* Skills */}
@@ -96,7 +87,7 @@ const Home = () => {
             <ul className="space-y-2 text-muted-foreground font-light">
                <li>Power BI</li>
               <li>UI/UX (Figma)</li>
-              <li>Adobe Illustrator</li>
+              <li>Adobe XD</li>
               <li>Wix Studio</li>
               <li>WordPress</li>
               <li>Front-end Development</li>
@@ -124,7 +115,7 @@ const Home = () => {
       {/* Resume Download */}
       <section>
   <h2 className="text-3xl mb-6">Resume</h2>
-<a href="/sanjumeha-portfolio/SG_SANJU_MEHA.pdf" download>
+<a href="public\SG-SANJU-MEHA-Resume.pdf" download>
     <Button className="border-primary hover:bg-primary hover:text-primary-foreground">
       Download Resume
     </Button>
