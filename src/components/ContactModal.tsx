@@ -16,7 +16,7 @@ export const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
         
         <div className="space-y-6">
           <a
-            href="https://www.linkedin.com/in/sanju-meha-20543331b"
+            href="https://www.linkedin.com/in/sanjumeha/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-primary transition-all group"

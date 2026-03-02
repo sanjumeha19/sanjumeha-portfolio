@@ -1,5 +1,14 @@
 import { motion, type Variants } from "framer-motion";
 
+// ✅ import images properly
+import login from "@/assets/loginscreen.jpeg";
+import profile from "@/assets/profilepage.jpeg";
+import domain from "@/assets/domainpage.jpeg";
+import subdomain from "@/assets/subdomain.jpeg";
+import jobsearch from "@/assets/jobsearchpage.jpeg";
+import menu from "@/assets/menupage.jpeg";
+import certificate from "@/assets/CMR-Certificate.png";
+
 // soft fade-up animation
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
@@ -80,11 +89,12 @@ const Hackathons = () => {
                 Solution
               </span>
               <p className="mt-1">
-              {" "}
-                <span className="text-primary">
-                 
-                </span>{" "}
-         "Developed a gamified career guidance platform using a website and a Flutter-based mobile application. Users explore career paths through Trending courses and their salary pakages, job seeking opportunities,domain exploration, and personalized recommendations. The solution emphasizes intuitive UI flow and engaging visual feedback to make career discovery simple and motivating."
+                Developed a gamified career guidance platform using a website
+                and a Flutter-based mobile application. Users explore career
+                paths through trending courses, salary packages, job
+                opportunities, domain exploration, and personalized
+                recommendations. The solution focuses on intuitive UI flow
+                and engaging visual feedback.
               </p>
             </div>
 
@@ -126,24 +136,19 @@ const Hackathons = () => {
               </h3>
 
               <div className="flex gap-4 overflow-x-auto pb-2">
-                {[
-                  "public/loginscreen.jpeg",
-                  "public/profilepage.jpeg",
-                  "public/domainpage.jpeg",
-                  "public/subdomain.jpeg",
-                  "public/jobsearchpage.jpeg",
-                  "public/menupage.jpeg",
-                ].map((src, i) => (
-                  <motion.img
-                    key={i}
-                    src={src}
-                    alt={`App screen ${i + 1}`}
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
-                    className="h-72 rounded-2xl border border-border
-                    shadow-sm bg-background"
-                  />
-                ))}
+                {[login, profile, domain, subdomain, jobsearch, menu].map(
+                  (src, i) => (
+                    <motion.img
+                      key={i}
+                      src={src}
+                      alt={`App screen ${i + 1}`}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.3 }}
+                      className="h-72 rounded-2xl border border-border
+                      shadow-sm bg-background"
+                    />
+                  )
+                )}
               </div>
             </div>
 
@@ -153,7 +158,7 @@ const Hackathons = () => {
                 Proof of participation
               </p>
               <img
-                src="public/CMR-Certificate.png"
+                src={certificate}
                 alt="CMR Hackathon Certificate"
                 className="max-w-md rounded-2xl border border-border
                 shadow-md bg-background"
@@ -169,13 +174,13 @@ const Hackathons = () => {
               </p>
             </div>
 
-            {/* Human closing line */}
+            {/* Closing line */}
             <p className="text-sm text-muted-foreground mt-6">
               This experience reinforced my love for building calm, intuitive
               mobile experiences under real-world pressure.
             </p>
 
-            {/* Link */}
+            {/* GitHub link */}
             <div className="mt-6">
               <a
                 href="https://github.com/sanjumeha19/Career_Guidance-App"

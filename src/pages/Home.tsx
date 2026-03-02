@@ -115,7 +115,7 @@ const Home = () => {
       {/* Resume Download */}
       <section>
   <h2 className="text-3xl mb-6">Resume</h2>
-<a href="public\SG-SANJU-MEHA-Resume.pdf" download>
+<a href="/sanjumeha-portfolio/SG-Sanju-Meha-Resume.pdf" download>
     <Button className="border-primary hover:bg-primary hover:text-primary-foreground">
       Download Resume
     </Button>
